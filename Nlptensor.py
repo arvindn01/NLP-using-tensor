@@ -6,9 +6,6 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.optimizers import Adam
 import numpy as np
-!wget --no-check-certificate \
-    https://storage.googleapis.com/laurencemoroney-blog.appspot.com/irish-lyrics-eof.txt \
-    -O /tmp/irish-lyrics-eof.txt
 tokenizer = Tokenizer()
 
 data = open('/tmp/irish-lyrics-eof.txt').read()
